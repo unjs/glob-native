@@ -1,0 +1,59 @@
+{
+  "name": "glob-native",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.4.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "danielroe/glob-native",
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "vitest dev",
+    "lint": "eslint . --fix",
+    "prepare": "simple-git-hooks",
+    "prepack": "pnpm build",
+    "prepublishOnly": "pnpm lint && pnpm test",
+    "release": "bumpp && pnpm publish",
+    "test": "pnpm test:unit && pnpm test:types",
+    "test:unit": "vitest",
+    "test:types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fdir": "^6.1.1",
+    "picomatch": "^4.0.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "latest",
+    "@types/picomatch": "^2.3.4",
+    "@vitest/coverage-v8": "latest",
+    "bumpp": "^9.4.1",
+    "eslint": "latest",
+    "lint-staged": "latest",
+    "simple-git-hooks": "latest",
+    "typescript": "latest",
+    "unbuild": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "resolutions": {
+    "glob-native": "link:."
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,mjs,cjs,json,.*rc}": [
+      "pnpm eslint --fix"
+    ]
+  }
+}
