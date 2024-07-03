@@ -38,13 +38,13 @@ const cases = new Map<Parameters<typeof fspGlob>, any>([
   ],
   [
     // exclude - note that the node behaviour doesn't entirely match the docs - it only triggers on directories
-    [['fixture/**/*.*'], { cwd: 'test', exclude: path => path.endsWith('dir') }],
-    ['fixture/other/file.ts'],
+    [['_test_fixture/**/*.*'], { cwd: 'node_modules', exclude: path => path.endsWith('dir') }],
+    ['_test_fixture/other/file.ts'],
   ],
   [
     // exclude - note that the node behaviour doesn't entirely match the docs - it only triggers on directories
-    [['fixture/**/*.*'], { cwd: 'test', exclude: path => path.endsWith('.ts') }],
-    ['fixture/dir/README.md', 'fixture/dir/index.js'],
+    [['_test_fixture/**/*.*'], { cwd: 'node_modules', exclude: path => path.endsWith('.ts') }],
+    ['_test_fixture/dir/README.md', '_test_fixture/dir/index.js'],
   ],
   // Inconsistent implementation from polyfill
   // [
