@@ -5,7 +5,7 @@
   "packageManager": "pnpm@9.4.0",
   "description": "",
   "license": "MIT",
-  "repository": "danielroe/glob-native",
+  "repository": "unjs/glob-native",
   "sideEffects": false,
   "exports": {
     ".": "./dist/index.js"
