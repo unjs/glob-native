@@ -22,13 +22,13 @@ importers:
         specifier: latest
         version: 2.21.2(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)(vitest@1.6.0(@types/node@20.14.9))
       '@types/picomatch':
-        specifier: ^2.3.4
+        specifier: 2.3.4
         version: 2.3.4
       '@vitest/coverage-v8':
         specifier: latest
         version: 1.6.0(vitest@1.6.0(@types/node@20.14.9))
       bumpp:
-        specifier: ^9.4.1
+        specifier: 9.4.1
         version: 9.4.1(magicast@0.3.4)
       eslint:
         specifier: latest
