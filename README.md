@@ -50,7 +50,7 @@ Published under [MIT License](./LICENCE).
 [npm-version-src]: https://img.shields.io/npm/v/glob-native?style=flat-square
 [npm-version-href]: https://npmjs.com/package/glob-native
 [npm-downloads-src]: https://img.shields.io/npm/dm/glob-native?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/glob-native
+[npm-downloads-href]: https://npm.chart.dev/glob-native
 [github-actions-src]: https://img.shields.io/github/actions/workflow/status/unjs/glob-native/ci.yml?branch=main&style=flat-square
 [github-actions-href]: https://github.com/unjs/glob-native/actions?query=workflow%3Aci
 [codecov-src]: https://img.shields.io/codecov/c/gh/unjs/glob-native/main?style=flat-square
